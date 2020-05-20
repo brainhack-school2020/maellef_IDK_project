@@ -2,7 +2,7 @@
 
 To everyone passing by this README.md : Hello ! I hope you're having a good day, wherever you're in the world ! Please, have a cookie.
 
-![brain cookies !](https://github.com/brainhack-school2020/maellef_IDK_project/graphics/brain_cookies.jpg)
+![brain cookies !](https://github.com/brainhack-school2020/maellef_IDK_project/blob/master/graphics/brain_cookies.jpg)
 
 [links to these braintastics cookies cutters] (https://www.thingiverse.com/thing:3820314)
 
@@ -15,7 +15,7 @@ I'm a first year PhD student working on Deep Learning encoding models of auditor
 
 ### Background
 My PhD project is part of a bigger project, the Courtois Neuromod. 
-![cneuromod_logo]()
+![cneuromod_logo](https://github.com/brainhack-school2020/maellef_IDK_project/blob/master/graphics/logo_neuromod_black.png)
 [link to the cNeuromod official website](https://www.cneuromod.ca/)
 
 This project has for goal to model brain processes using AI, and to further improve our understanding of our dear brain's inner work. One important feature of the cNeuromod project is the creation of an extensive dataset of 6 subjects brains, with fMRI, MEG and biosignals recordings. 
