@@ -6,7 +6,7 @@ To everyone passing by this README.md : Hello ! I hope you're having a good day,
 
 [links to these braintastics cookies cutters](https://www.thingiverse.com/thing:3820314)
 
-
+[link to the presentation](https://docs.google.com/presentation/d/1glGlgnHoYoe2fxgS5SDSvCW82fZQKU_U1vwovwJn5q0/edit?usp=sharing)
 ## Presentation
 
 Hi everyone ! I'm Maëlle Freteault and I have a background of cognitive neurosciences, but with some training experience with programming in differents langages (python of course, but also C, C#, java, matlab...). I'm a first year pHD working on some encoding model of Auditory processing in the brain. 
