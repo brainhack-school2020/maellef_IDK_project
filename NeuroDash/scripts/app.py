@@ -1,25 +1,35 @@
 import dash
-import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
+import os
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+import bids_reader as br
+import dash_utils as du
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+def show_bids_layout(input_value):
+    if not os.path.lexists(input_value):
+        return 'this path isn\'t correct. Please enter a real path.'
+    
+    return '{}'.format(br.read_layout_from_dataset(input_value))
 
-app.layout = html.Div([
-    dcc.Input(id='my-id', value='initial value', type='text'),
-    html.Div(id='my-div')
-])
+#external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
+app = dash.Dash(__name__)#, external_stylesheets=external_stylesheets)
 
-@app.callback(
-    Output(component_id='my-div', component_property='children'),
-    [Input(component_id='my-id', component_property='value')]
-)
-def update_output_div(input_value):
-    return 'You\'ve entered "{}"'.format(input_value)
+colors = {
+    'background': '#111111',
+    'text': '#7FDBFF'
+}
 
+app.layout = html.Div(children=[
+    html.H1(children='BidsDash'),
+
+    html.Div(children='''
+        help visualise the content of a BIDS dataset
+    ''')])
+
+du.input_text(app, show_bids_layout, 
+            my_id='my-id', my_div='my-div', 
+            default_text='enter a absolute path')
 
 if __name__ == '__main__':
     app.run_server(debug=True)
